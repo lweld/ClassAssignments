@@ -1,8 +1,5 @@
 '''
 This is a program for Canada Post to determine the cost of sending parcels.
-
-Author: Liam Weld
-Student Number: 10148059
 '''
 
 #The program begins by determining if the user has one or two items.
