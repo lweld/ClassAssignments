@@ -1,8 +1,5 @@
 '''
 This is an adventure game where the user must navigate the streets of Tokyo, Japan.
-
-Author: Liam Weld
-Student Number: 10148059
 '''
 
 #Each function is a different area that a user could be sent to (different part of the decision tree).
