@@ -1,9 +1,5 @@
 '''
 This program creates a function called main that holds four functions within it to add, subtract, multiply and divide two numbers that the user inputs. This program is a calculator.
-
-Author: Liam Weld
-Student Number: 10148059
-
 '''
 
 #Function to add two user inputted numbers together
