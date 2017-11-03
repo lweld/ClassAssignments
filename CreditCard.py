@@ -3,9 +3,6 @@ This program takes an 8 digit credit card number and performs the following oper
 1. Starting from the rightmost digit, it sums every second number
 2. Starting from the leftmost digit, it doubles every number, then breaks up each number and sums them (e.g., 8 doubled becomes 16, which becomes 1 and 6, then 1 + 6 = 7)
 3. Adds the results of the two preceding steps
-
-Author: Liam Weld
-Student Number: 10148059
 '''
 def main():
 
