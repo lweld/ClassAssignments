@@ -1,6 +1,7 @@
 # ClassAssignments
 Here's some basic Python programs I wrote for a CS class. Enjoy!
 
+The **Crown Anchor Game** is by far the most sophisticated out of all those posted. It simulates the betting game, Crown & Anchors.
 
 The Adventure Game uses decision trees to route the user through the streets of Tokyo. For example, enter 'R' to run, 'F' to fight -- it's the classic old game.
 
@@ -13,5 +14,3 @@ The Credit Card program takes an 8 digit credit card number and performs various
 The Parse Hamlet program takes a passage from Hamlet and returns the number of times each word is repeated in the passage.
 
 The Parse Word List program imports a word list from the internet, removes nonsense words and allows the user to ask questions about this words.
-
-The **Crown Anchor Game** is by far the most sophisticated out of all those posted. It simulates the betting game, Crown & Anchors.
