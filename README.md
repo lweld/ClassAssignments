@@ -9,3 +9,9 @@ The Canada Post program calculates the cost of shipping an inputted item.
 The Calculator allows users to add, subtract, multiply, and divide any two numbers they like, as many times as they like (it also gives the user an error message if they try to divide by a zero).
 
 The Credit Card program takes an 8 digit credit card number and performs various calculations on the card number.
+
+The Parse Hamlet program takes a passage from Hamlet and returns the number of times each word is repeated in the passage.
+
+The Parse Word List program imports a word list from the internet, removes nonsense words and allows the user to ask questions about this words.
+
+The **Crown Anchor Game** is by far the most sophisticated out of all those posted. It simulates the betting game, Crown & Anchors.
