@@ -1,0 +1,67 @@
+'''
+This program imports a list of words from the internet, removes nonsense words and allows the user to ask questions about the list of words.
+'''
+
+import urllib.request
+
+def clean_list(clean): #this function removes nonsense words from the list like 'aaa'
+    for i in clean:
+        if len(i) > 0:
+            if i == i[0] * len(i): #checks if the begining letter in word is repeated continously throughout the word
+                clean.remove(i)
+    return clean
+
+
+def read_word_list():
+    response = urllib.request.urlopen("http://www.mit.edu/~ecprice/wordlist.10000")
+    html = response.read()
+    data = html.decode('utf-8').split("\n")
+    return data
+
+
+def in_or_not(words):
+    inList = input("Which word would you like to check to see if it's in the list or not? ")
+    if inList in words: #checks if the word that the user inputted is in the cleaned list of words
+        print("Yes,", inList, "is in the list")
+    else:
+        print("No,", inList, "is not in the list")
+
+
+def len_of_list(words):
+    inList = int(input("What numerical length would you like to check for? "))
+    counter = 0
+    for i in words:
+        if inList == len(i): #checks if the desired length the user wants to check is the length of any words in the cleaned list
+            counter += 1 #if above is true, counter increments by one
+    print(counter, "words are of the length", inList)
+
+       
+def check_x(words):
+    inList = input("Which letter would you like to check for? ")
+    while len(inList) != 1 and inList == int:
+        inList = input("Which letter would you like to check for? ")
+    counter = 0
+    for i in words:
+        if len(i) > 0 and i[0] == inList: #checks if the begining of the word begins with 'x' and skips over blanks in the list
+            counter += 1 #if above is true, counter increments by one
+    print(counter, "words began with the letter", inList)
+
+
+def myList(words): #asks the user which action they would like to perform and sends them to the action's associated function
+    inList = input("If you would like to ask if a word is in the list or not, enter 'A'.\nIf you would like to ask how many words of a certain numerical length are in the list, enter 'N'.\nIf you would like to ask how many words begin with a certain letter, enter 'X'.\nIf you would like to quit the program, enter 'Q'.\n")
+    while inList != 'Q': #while the user decides not to quit the program, it will continously ask the user what action they would like to take
+        if inList == 'A' or inList == 'a':
+            in_or_not(words) #sends the user to the function where they can determine if a word is in the cleaned list or not
+        elif inList == 'N' or inList == 'n':
+            len_of_list(words) #sends the user to the function where they can check how many words are a specified length
+        elif inList == 'X' or inList == 'x':
+            check_x(words) #sends the user to the function where they can see how many words begin with the letter 'x'
+        inList = input("\nIf you would like to ask if a word is in the list or not, enter 'A'.\nIf you would like to ask how many words of a certain numerical length are in the list, enter 'N'.\nIf you would like to ask how many words begin with a certain letter, enter 'X'.\nIf you would like to quit the program, enter 'Q'.\n")
+    print("Thank you! Come again.")
+
+
+def main(): #main function that stores the value of the cleaned list and calls the function that asks the user to take an action
+    a = read_word_list()
+    clean = clean_list(a)
+    myList(clean)
+main()
