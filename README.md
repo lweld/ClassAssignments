@@ -1,7 +1,13 @@
 # ClassAssignments
 Here's some basic Python programs I wrote for a CS class. Enjoy!
 
-The **Crown Anchor Game** is by far the most sophisticated out of all those posted. It simulates the betting game, Crown & Anchors.
+RecursonFun lets a user print the digits of an integer backwards, determine if a number is even, print asterisks, and raise a number to a power. All using recursive functions.
+
+LinkedLists takes requests from Tim Hortons customers using Linked Lists.
+
+Treasure hunt is a game where the user enters a position number and depending on if it's a treasure, another index position number, or out of bounds, they win the treasure amount, are sent to another position on the board, or lose all their winnings.
+
+The Crown Anchor Game simulates the betting game, Crown & Anchors.
 
 The Adventure Game uses decision trees to route the user through the streets of Tokyo. For example, enter 'R' to run, 'F' to fight -- it's the classic old game.
 
